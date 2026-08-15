@@ -226,7 +226,7 @@ http://localhost:5173
 and the backend at:
 
 ```text
-http://localhost:3000
+https://pulse-backend-01ms.onrender.com
 ```
 
 ## What I Practiced

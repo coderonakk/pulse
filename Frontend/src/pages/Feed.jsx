@@ -15,7 +15,7 @@ const Feed = () => {
     const userName = async () => {
 
         try {
-            const user = await axios.get('http://localhost:3000/api/auth/me',
+            const user = await axios.get('https://pulse-backend-01ms.onrender.com/api/auth/me',
                 {
                     withCredentials: true
                 })
@@ -31,7 +31,7 @@ const Feed = () => {
 
     const getData = async () => {
 
-        const posts = await axios.get("http://localhost:3000/api/get")
+        const posts = await axios.get("https://pulse-backend-01ms.onrender.com/api/get")
 
         setposts(posts.data.result);
 
@@ -41,7 +41,7 @@ const Feed = () => {
     const deletePost = async (postId) => {
         try {
             await axios.delete(
-                `http://localhost:3000/api/delete/${postId}`,
+                `https://pulse-backend-01ms.onrender.com/api/delete/${postId}`,
                 {
                     withCredentials: true
                 }
@@ -57,7 +57,7 @@ const Feed = () => {
     const logOut = async () => {
 
         try {
-            await axios.post('http://localhost:3000/api/auth/logout', {}, {
+            await axios.post('https://pulse-backend-01ms.onrender.com/api/auth/logout', {}, {
                 withCredentials: true
             })
 

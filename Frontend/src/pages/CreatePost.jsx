@@ -13,7 +13,7 @@ const CreatePost = () => {
 
         try {
 
-            const posts = await axios.post("http://localhost:3000/api/create", formData,
+            const posts = await axios.post("https://pulse-backend-01ms.onrender.com/api/create", formData,
                 {
                     withCredentials: true
                 })
@@ -30,7 +30,7 @@ const CreatePost = () => {
     const auth = async () => {
 
         try {
-            const user = await axios.get('http://localhost:3000/api/auth/me',
+            const user = await axios.get('https://pulse-backend-01ms.onrender.com/api/auth/me',
                 {
                     withCredentials: true
                 })
