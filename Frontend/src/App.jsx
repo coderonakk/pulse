@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Register from './pages/register'
+import Register from './pages/Register'
 import Login from './pages/Login'
 import Feed from './pages/Feed'
 import CreatePost from './pages/CreatePost'
